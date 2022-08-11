@@ -183,6 +183,8 @@ class Square extends React.Component {
     return null;
   }
 
+
+  
   class LoggingButton extends React.Component {
     handleClick() {
       console.log('this is:', this);
