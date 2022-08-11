@@ -1,13 +1,59 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+    font: 14px "Century Gothic", Futura, sans-serif;
+    margin: 20px;
+  }
+  
+  ol, ul {
+    padding-left: 30px;
+  }
+  
+  .board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+  
+  .status {
+    margin-bottom: 10px;
+  }
+  
+  .square {
+    background: #fff;
+    border: 1px solid #999;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 34px;
+    height: 34px;
+    margin-right: -1px;
+    margin-top: -1px; /* outside */
+    padding: 0; /* inside */
+    text-align: center; /* ブロック要素または表セルボックスの水平方向の配置 */
+    width: 34px;
+  }
+  
+  .square:focus {
+    outline: none;
+  }
+  
+  .kbd-navigation .square:focus {
+    background: #ddd;
+  }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+  /*
+  https://saruwakakun.com/html-css/basic/display
+block⇒要素が横までいっぱいに広がり、縦に並んでいく, block要素どうしの間には改行, p、div、ul、h1〜h6などのタグの初期値はコレ
+inline⇒要素が平ぺったく横に並んでいく, inlineの要素どうしの間には改行が入らず、横に並んでいきます。 a、span、imgなどのタグの初期値はコレ
+inline-block⇒blockとinlineの中間,, 基本的にモノを横に並べたいときに使える！
+none⇒非表示になる, あくまでも非表示になるだけであり、ウェブページが開かれるときには普通に読み込まれています。たとえば「パソコンで見たときには表示させている要素を、画面の小さいスマホで見たときにだけdisplay:noneで非表示にする」
+
+inlineの要素は、基本的にはblockの要素の中に入ります。
+  */
+  .game {
+    display: flex;
+    flex-direction: row; /* column 縦方向 */
+  }
+  
+  .game-info {
+    margin-left: 20px;
+  }
