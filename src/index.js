@@ -1,22 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-<<<<<<< HEAD
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
-=======
 import './index.css'; // root directory is tic-tac-toe/
 
 //関数コンポーネント, render メソッドだけを有して自分の state を持たないコンポーネントを、よりシンプルに書くための方法
@@ -256,4 +239,3 @@ class Square extends React.Component {
 ---------------
   slice(start, end): start から end まで (end は含まれない) 
   */
->>>>>>> parent of c39636b (ok)
