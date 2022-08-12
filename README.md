@@ -73,3 +73,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 rebase test
 rebase test b
 feature 1a
+
+feature 1
